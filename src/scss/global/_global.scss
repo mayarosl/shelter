@@ -1,0 +1,23 @@
+html {
+    font-size: 10px;
+    line-height: 10px;
+    color: $color-dark-xl;
+}
+
+body {}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
