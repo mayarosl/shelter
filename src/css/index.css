@@ -132,9 +132,7 @@ img {
     margin-bottom: 30px; }
 
 .header {
-  background: url("/src/assets/startscreen/start-screen-gradient-background.png");
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background: url("/src/assets/footer/noise_transparent.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20; }
   .header__wrapper {
     padding-top: 30px; }
   .header__logo-and-nav {
@@ -160,7 +158,9 @@ img {
   .header__burger {
     padding: 0 43px; }
   .header__startscreen {
-    padding-top: 6rem; }
+    padding-top: 6rem;
+    max-width: 300px;
+    margin: auto; }
   .header__startscreen-content {
     margin-bottom: 105px; }
   .header__startscreen-heading {
@@ -191,7 +191,9 @@ img {
     padding-top: 4.2rem;
     padding-bottom: 4.2rem; }
   .about__content {
-    padding-bottom: 4.2rem; }
+    padding-bottom: 4.2rem;
+    max-width: 300px;
+    margin: auto; }
   .about__section-heading {
     padding-bottom: 2.5rem; }
   .about__paragraph {
@@ -238,7 +240,9 @@ img {
     margin-bottom: 4.2rem; }
   .help__items {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    max-width: 300px;
+    margin: auto; }
   .help__item {
     display: flex;
     flex-direction: column;
@@ -265,7 +269,11 @@ img {
     padding-top: 4.2rem;
     padding-bottom: 4.2rem; }
   .donation__content {
-    padding-bottom: 4.2rem; }
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-bottom: 4.2rem;
+    max-width: 280px; }
   .donation__section-heading, .donation__subheading, .donation__credit-card {
     padding-bottom: 2rem; }
   .donation__subheading {
@@ -275,37 +283,30 @@ img {
     color: #545454; }
   .donation__credit-card {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #F1CDB3;
-    padding: 13px;
+    padding: 10px;
     border-radius: 9px;
-    margin-bottom: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
-    background-image: url("/src/assets/donation/credit-card.svg");
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-origin: content-box; }
+    margin-bottom: 20px; }
   .donation__credit-card-number {
     font-size: 1.5rem;
     line-height: 1.7rem;
     letter-spacing: 0.06em;
     color: #545454;
-    padding-left: 45px; }
+    padding-left: 15px; }
   .donation__legal-info {
     font-style: italic;
     font-size: 1.2rem;
     line-height: 1.8rem;
     color: #B2B2B2;
-    text-align: justify;
-    padding: 0 10px; }
+    text-align: justify; }
   .donation__img {
     width: 260px;
     margin: auto; }
 
 .footer {
-  background: url("/src/assets/footer/footer-gradient-background.png");
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background: url("/src/assets/footer/noise_transparent.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20; }
   .footer__wrapper {
     padding-top: 30px; }
   .footer__content {

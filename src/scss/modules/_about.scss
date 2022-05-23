@@ -8,6 +8,8 @@
 
   &__content {
     padding-bottom: $mobile-padding-bottom;
+    max-width: 300px;
+    margin: auto;
   }
 
   &__section-heading {
