@@ -9,7 +9,7 @@ $mobile-margin-bottom: 4.2rem;
 
 
   &__wrapper {
-    padding: 30px $mobile-wrapper-padding 0;
+    padding-top: 30px;
   }
 
   &__logo-and-nav {
@@ -49,7 +49,7 @@ $mobile-margin-bottom: 4.2rem;
   }
 
   &__startscreen-content {
-    margin-bottom: 100px;
+    margin-bottom: 105px;
   }
 
   &__startscreen-heading {
@@ -76,7 +76,8 @@ $mobile-margin-bottom: 4.2rem;
   }
 
   &__startscreen-img {
+    display: flex;
     margin-left: auto;
-    width: 260px;
+    width: $mobile-img-width;
   }
 }
