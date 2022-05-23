@@ -1,0 +1,30 @@
+.pets {
+  &__wrapper {
+    padding-top: $mobile-wrapper-padding-top;
+    padding-bottom: $mobile-wrapper-padding-bottom;
+    background: $color-light-l;
+  }
+
+  &__slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 270px;
+  }
+
+  &__section-heading {
+    padding-bottom: $mobile-padding-bottom;
+  }
+
+  &__slider-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 184px;
+  }
+
+  &__slider-cards {
+    margin-bottom: 40px;
+  }
+}
