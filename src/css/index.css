@@ -40,7 +40,9 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif; }
+  font-family: 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400; }
 
 h1,
 h2,
@@ -48,7 +50,9 @@ h3,
 h4,
 h5 {
   margin: 0;
-  font-family: 'Georgia', serif; }
+  font-family: 'Georgia', serif;
+  font-style: normal;
+  font-weight: 400; }
 
 p {
   margin: 0;
@@ -60,22 +64,36 @@ a {
 img {
   max-width: 100%; }
 
+.wrapper {
+  padding-right: 1rem;
+  padding-left: 1rem; }
+
 .primary-button {
   display: inline-block;
   background: #F1CDB3;
   align-items: center;
   padding: 15px 45px;
   border-radius: 100px;
+  font-family: 'Georgia', serif;
   font-size: 1.7rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.06em;
   color: #292929;
   cursor: pointer; }
+
+.section-heading {
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #545454; }
 
 .header {
   background: url("/src/assets/startscreen/start-screen-gradient-background.png");
   background-repeat: no-repeat;
   background-size: cover; }
   .header__wrapper {
-    padding: 30px 1rem 0; }
+    padding-top: 30px; }
   .header__logo-and-nav {
     display: flex;
     justify-content: space-between;
@@ -101,7 +119,7 @@ img {
   .header__startscreen {
     padding-top: 6rem; }
   .header__startscreen-content {
-    margin-bottom: 100px; }
+    margin-bottom: 105px; }
   .header__startscreen-heading {
     font-style: normal;
     font-weight: 400;
@@ -120,5 +138,28 @@ img {
   .header__button-wrapper {
     text-align: center; }
   .header__startscreen-img {
+    display: flex;
     margin-left: auto;
-    width: 260px; }
+    width: 26rem; }
+
+.about {
+  background: #FFFFFF; }
+  .about__wrapper {
+    padding-top: 4.2rem;
+    padding-bottom: 4.2rem; }
+  .about__content {
+    padding-bottom: 4.2rem; }
+  .about__section-heading {
+    padding-bottom: 2.5rem; }
+  .about__paragraph {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    text-align: justify;
+    color: #4C4C4C; }
+    .about__paragraph:not(:last-child) {
+      padding-bottom: 2.2rem; }
+  .about__img {
+    width: 26rem;
+    margin: auto; }

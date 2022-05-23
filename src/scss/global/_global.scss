@@ -7,6 +7,8 @@ html {
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 h1,
@@ -16,6 +18,8 @@ h4,
 h5 {
     margin: 0;
     font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 p {
@@ -29,4 +33,9 @@ a {
 
 img {
     max-width: 100%;
+}
+
+.wrapper {
+    padding-right:1rem;
+    padding-left: 1rem;
 }
