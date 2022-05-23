@@ -301,3 +301,35 @@ img {
   .donation__img {
     width: 260px;
     margin: auto; }
+
+.footer {
+  background: url("/src/assets/footer/footer-gradient-background.png"); }
+  .footer__wrapper {
+    padding-top: 30px; }
+  .footer__section-heading {
+    color: #FFFFFF; }
+  .footer__contacts, .footer__location {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .footer__contacts {
+    height: 208px;
+    padding-bottom: 41px;
+    align-items: center; }
+  .footer__location {
+    height: 220px;
+    padding-bottom: 40px; }
+  .footer__link {
+    display: flex;
+    align-items: center; }
+  .footer__icon {
+    padding-right: 20px; }
+  .footer__link-heading {
+    font-size: 2rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.06em;
+    color: #F1CDB3; }
+  .footer__img {
+    width: 260px;
+    display: flex;
+    margin: auto; }
