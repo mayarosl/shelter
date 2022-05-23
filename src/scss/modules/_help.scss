@@ -20,12 +20,15 @@ $help-icon-mobile-height: 50px;
 
   &__item {
     display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     max-width: 50%;
-    padding-bottom: 30px;
+
+    &:not(:last-child) {
+      padding-bottom: 30px;
+    }
   }
 
   &__item-img {
