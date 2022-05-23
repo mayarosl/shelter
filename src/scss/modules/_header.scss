@@ -4,6 +4,7 @@ $mobile-margin-bottom: 4.2rem;
 
 .header {
   background: url('/src/assets/footer/noise_transparent.png'), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  position: relative;
 
   &__wrapper {
     padding-top: 30px;
@@ -15,12 +16,14 @@ $mobile-margin-bottom: 4.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // z-index: 100;
   }
 
   &__logo {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 100;
   }
 
   &__logo-heading {
@@ -39,8 +42,16 @@ $mobile-margin-bottom: 4.2rem;
     color: $color-light-xl;
   }
 
-  &__burger {
+  &__burger-container {
     padding: 0 43px;
+    z-index: 100;
+  }
+
+  &__burger {
+  }
+
+  &__burger--active {
+    transform: rotate(90deg);
   }
 
   &__startscreen {

@@ -9,6 +9,8 @@ body {
     font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
+
+    overflow-x: hidden;
 }
 
 h1,
@@ -35,6 +37,12 @@ img {
     max-width: 100%;
 }
 
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
 .wrapper {
     padding-right:1rem;
     padding-left: 1rem;
@@ -43,3 +51,7 @@ img {
 .rotate {
     transform: rotate(180deg);
 }
+
+.stop-scroll {
+    overflow: hidden;
+  }

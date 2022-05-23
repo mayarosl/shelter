@@ -42,7 +42,8 @@ body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+  overflow-x: hidden; }
 
 h1,
 h2,
@@ -64,12 +65,20 @@ a {
 img {
   max-width: 100%; }
 
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
 .wrapper {
   padding-right: 1rem;
   padding-left: 1rem; }
 
 .rotate {
   transform: rotate(180deg); }
+
+.stop-scroll {
+  overflow: hidden; }
 
 .button-primary {
   display: inline-block;
@@ -132,7 +141,8 @@ img {
     margin-bottom: 30px; }
 
 .header {
-  background: url("/src/assets/footer/noise_transparent.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20; }
+  background: url("/src/assets/footer/noise_transparent.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  position: relative; }
   .header__wrapper {
     padding-top: 30px;
     max-width: 320px;
@@ -144,7 +154,8 @@ img {
   .header__logo {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    z-index: 100; }
   .header__logo-heading {
     margin-bottom: 10px;
     color: #F1CDB3;
@@ -157,8 +168,11 @@ img {
     line-height: 1.5rem;
     letter-spacing: 0.1em;
     color: #FFFFFF; }
-  .header__burger {
-    padding: 0 43px; }
+  .header__burger-container {
+    padding: 0 43px;
+    z-index: 100; }
+  .header__burger--active {
+    transform: rotate(90deg); }
   .header__startscreen {
     padding-top: 6rem;
     max-width: 300px;
@@ -186,6 +200,44 @@ img {
     display: flex;
     margin-left: auto;
     width: 260px; }
+
+.mobile-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #292929;
+  z-index: 10;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+  transform: translate(100%);
+  transition: transform 0.6s ease-in-out; }
+  .mobile-nav--visible {
+    transform: none; }
+  .mobile-nav__list {
+    padding-top: 248px;
+    padding-bottom: 250px;
+    text-align: center; }
+  .mobile-nav__item:not(:last-child) {
+    padding-bottom: 40px; }
+  .mobile-nav__link {
+    position: relative;
+    font-size: 32px;
+    line-height: 5.1rem;
+    color: #CDCDCD; }
+    .mobile-nav__link:hover, .mobile-nav__link:active {
+      color: #FAFAFA; }
+      .mobile-nav__link:hover::before, .mobile-nav__link:active::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 3px;
+        background-color: #F1CDB3; }
 
 .about {
   background: #FFFFFF; }
