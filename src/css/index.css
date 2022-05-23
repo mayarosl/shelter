@@ -85,14 +85,15 @@ img {
   letter-spacing: 0.06em;
   color: #292929;
   cursor: pointer; }
-  .button-primary:hover {
+  .button-primary:hover, .button-primary:active {
     background: #FDDCC4; }
 
 .button-secondary {
   background: transparent;
   border: 2px solid #F1CDB3; }
-  .button-secondary:hover {
-    background: #FDDCC4; }
+  .button-secondary:hover, .button-secondary:active {
+    background: #FDDCC4;
+    border: 2px solid #FDDCC4; }
 
 .button-arrow {
   display: flex;
@@ -100,8 +101,6 @@ img {
   padding: 22px 17px;
   width: 52px;
   height: 52px; }
-  .button-arrow:hover {
-    background: #FDDCC4; }
 
 .section-heading {
   font-size: 2.5rem;
@@ -119,7 +118,8 @@ img {
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   margin-bottom: 20px;
-  height: 435px; }
+  height: 435px;
+  background: #FAFAFA; }
   .slider-card__img {
     width: 270px;
     height: 270px; }
@@ -208,26 +208,52 @@ img {
     height: 355px;
     margin: auto; }
 
-.pets__wrapper {
-  padding-top: 4.2rem;
-  padding-bottom: 4.2rem;
+.pets {
   background: #F6F6F6; }
+  .pets__wrapper {
+    padding-top: 4.2rem;
+    padding-bottom: 4.2rem; }
+  .pets__slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 270px; }
+  .pets__section-heading {
+    padding-bottom: 4.2rem; }
+  .pets__slider-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 184px; }
+  .pets__slider-cards {
+    margin-bottom: 40px; }
 
-.pets__slider {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  width: 270px; }
-
-.pets__section-heading {
-  padding-bottom: 4.2rem; }
-
-.pets__slider-buttons {
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  width: 184px; }
-
-.pets__slider-cards {
-  margin-bottom: 40px; }
+.help {
+  background: #FFFFFF; }
+  .help__wrapper {
+    padding-top: 4.2rem;
+    padding-bottom: 4.2rem; }
+  .help__section-heading {
+    margin-bottom: 4.2rem; }
+  .help__items {
+    display: flex;
+    flex-wrap: wrap; }
+  .help__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-width: 50%;
+    padding-bottom: 30px; }
+  .help__item-img {
+    width: 50px;
+    height: 50px;
+    padding-bottom: 20px; }
+  .help__item-heading {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454; }

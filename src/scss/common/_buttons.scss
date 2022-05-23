@@ -14,7 +14,8 @@
   color: $color-dark-3xl;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:active {
     background: $color-primary-light;
   }
 }
@@ -23,8 +24,10 @@
   background: transparent;
   border: 2px solid $color-primary;
 
-  &:hover {
+  &:hover,
+  &:active {
     background: $color-primary-light;
+    border: 2px solid $color-primary-light;
   }
 }
 
@@ -34,8 +37,4 @@
   padding: 22px 17px;
   width: 52px;
   height: 52px;
-
-  &:hover {
-    background: $color-primary-light;
-  }
 }
