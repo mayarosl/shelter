@@ -134,7 +134,9 @@ img {
 .header {
   background: url("/src/assets/footer/noise_transparent.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20; }
   .header__wrapper {
-    padding-top: 30px; }
+    padding-top: 30px;
+    max-width: 320px;
+    margin: auto; }
   .header__logo-and-nav {
     display: flex;
     justify-content: space-between;
