@@ -1,8 +1,10 @@
 .pets {
+  background: $color-light-l;
+  
   &__wrapper {
     padding-top: $mobile-wrapper-padding-top;
     padding-bottom: $mobile-wrapper-padding-bottom;
-    background: $color-light-l;
+    
   }
 
   &__slider {
