@@ -1,8 +1,16 @@
 .footer {
   background: url('/src/assets/footer/footer-gradient-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &__wrapper {
     padding-top: 30px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__section-heading {
@@ -13,8 +21,8 @@
   &__location {
     display: flex;
     flex-direction: column;
-    
     justify-content: space-between; 
+    width: 300px;
   }
 
   &__contacts {

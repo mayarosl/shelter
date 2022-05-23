@@ -303,15 +303,22 @@ img {
     margin: auto; }
 
 .footer {
-  background: url("/src/assets/footer/footer-gradient-background.png"); }
+  background: url("/src/assets/footer/footer-gradient-background.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
   .footer__wrapper {
     padding-top: 30px; }
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .footer__section-heading {
     color: #FFFFFF; }
   .footer__contacts, .footer__location {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    width: 300px; }
   .footer__contacts {
     height: 208px;
     padding-bottom: 41px;
