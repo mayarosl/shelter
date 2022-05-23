@@ -16,6 +16,8 @@ $help-icon-mobile-height: 50px;
   &__items {
     display: flex;
     flex-wrap: wrap;
+    max-width: 300px;
+    margin: auto;
   }
 
   &__item {

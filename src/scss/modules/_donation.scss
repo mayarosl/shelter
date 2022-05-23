@@ -7,7 +7,11 @@
   }
 
   &__content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     padding-bottom: $mobile-wrapper-padding-bottom;
+    max-width: 280px;
   }
 
   &__section-heading,
@@ -25,16 +29,12 @@
 
   &__credit-card {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $color-primary;
-    padding: 13px;
+    padding: 10px;
     border-radius: 9px;
     margin-bottom: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
-    background-image: url('/src/assets/donation/credit-card.svg');
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-origin: content-box;
   }
 
   &__credit-card-number {
@@ -42,7 +42,7 @@
     line-height: 1.7rem;
     letter-spacing: 0.06em;
     color: $color-dark-l;
-    padding-left: 45px;
+    padding-left: 15px;
   }
 
   &__legal-info {
@@ -51,7 +51,6 @@
     line-height: 1.8rem;
     color: $color-dark-m;
     text-align: justify;
-    padding: 0 10px;
   }
 
   &__img {
