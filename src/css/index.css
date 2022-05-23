@@ -68,18 +68,40 @@ img {
   padding-right: 1rem;
   padding-left: 1rem; }
 
-.primary-button {
+.rotate {
+  transform: rotate(180deg); }
+
+.button-primary {
   display: inline-block;
   background: #F1CDB3;
   align-items: center;
   padding: 15px 45px;
+  border: none;
   border-radius: 100px;
+  outline: none;
   font-family: 'Georgia', serif;
   font-size: 1.7rem;
   line-height: 2.2rem;
   letter-spacing: 0.06em;
   color: #292929;
   cursor: pointer; }
+  .button-primary:hover {
+    background: #FDDCC4; }
+
+.button-secondary {
+  background: transparent;
+  border: 2px solid #F1CDB3; }
+  .button-secondary:hover {
+    background: #FDDCC4; }
+
+.button-arrow {
+  display: flex;
+  align-items: center;
+  padding: 22px 17px;
+  width: 52px;
+  height: 52px; }
+  .button-arrow:hover {
+    background: #FDDCC4; }
 
 .section-heading {
   font-size: 2.5rem;
@@ -87,6 +109,27 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   color: #545454; }
+
+.slider-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  margin-bottom: 20px;
+  height: 435px; }
+  .slider-card__img {
+    width: 270px;
+    height: 270px; }
+  .slider-card__heading {
+    font-size: 2rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.06em;
+    color: #545454; }
+  .slider-card__button {
+    margin-bottom: 30px; }
 
 .header {
   background: url("/src/assets/startscreen/start-screen-gradient-background.png");
@@ -140,7 +183,7 @@ img {
   .header__startscreen-img {
     display: flex;
     margin-left: auto;
-    width: 26rem; }
+    width: 260px; }
 
 .about {
   background: #FFFFFF; }
@@ -161,5 +204,30 @@ img {
     .about__paragraph:not(:last-child) {
       padding-bottom: 2.2rem; }
   .about__img {
-    width: 26rem;
+    width: 260px;
+    height: 355px;
     margin: auto; }
+
+.pets__wrapper {
+  padding-top: 4.2rem;
+  padding-bottom: 4.2rem;
+  background: #F6F6F6; }
+
+.pets__slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 270px; }
+
+.pets__section-heading {
+  padding-bottom: 4.2rem; }
+
+.pets__slider-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 184px; }
+
+.pets__slider-cards {
+  margin-bottom: 40px; }
