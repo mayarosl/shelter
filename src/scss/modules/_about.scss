@@ -1,0 +1,36 @@
+.about {
+  background: $color-light-xl;
+
+  &__wrapper {
+    padding-top: $mobile-wrapper-padding-top;
+    padding-bottom: $mobile-wrapper-padding-bottom;
+  }
+
+  &__content {
+    padding-bottom: $mobile-padding-bottom;
+  }
+
+  &__section-heading {
+    padding-bottom: 2.5rem;
+  }
+
+  &__paragraph {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    text-align: justify;
+    color: $color-dark-xl;
+
+    &:not(:last-child) {
+      padding-bottom: 2.2rem;
+    }
+  }
+
+
+ &__img {
+  width: $mobile-img-width;
+  margin: auto;
+ }
+
+}

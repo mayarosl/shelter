@@ -1,0 +1,83 @@
+$mobile-heading-font-size: 2.5rem;
+$mobile-heading-line-height: 3.2rem;
+$mobile-margin-bottom: 4.2rem;
+
+.header {
+  background: url('/src/assets/startscreen/start-screen-gradient-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  &__wrapper {
+    padding-top: 30px;
+  }
+
+  &__logo-and-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo-heading {
+    margin-bottom: 10px;
+    color: $color-primary;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+}
+
+  &__logo-subheading {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.1em;
+    color: $color-light-xl;
+  }
+
+  &__burger {
+    padding: 0 43px;
+  }
+
+  &__startscreen {
+    padding-top: 6rem;
+  }
+
+  &__startscreen-content {
+    margin-bottom: 105px;
+  }
+
+  &__startscreen-heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: $mobile-heading-font-size;
+    line-height: $mobile-heading-line-height;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $color-light-xl;
+    margin-bottom: $mobile-margin-bottom;
+  }
+
+  &__startscreen-subheading {
+    font-size: $p-font-size;
+    line-height: $p-line-height;
+    text-align: center;
+    color: $color-dark-s;
+    margin-bottom: $mobile-margin-bottom;
+  }
+
+  &__button-wrapper {
+    text-align: center;
+  }
+
+  &__startscreen-img {
+    display: flex;
+    margin-left: auto;
+    width: $mobile-img-width;
+  }
+}

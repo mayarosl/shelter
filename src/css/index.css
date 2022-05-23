@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'Georgia';
+  src: local("Georgia Italic"), local("Georgia-Italic"), url("../assets/fonts/GeorgiaItalic.woff2") format("woff2"), url("../assets/fonts/GeorgiaItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Georgia';
+  src: local("Georgia Bold"), local("Georgia-Bold"), url("../assets/fonts/Georgia-Bold.woff2") format("woff2"), url("../assets/fonts/Georgia-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Georgia';
+  src: local("Georgia"), url("../assets/fonts/Georgia.woff2") format("woff2"), url("../assets/fonts/Georgia.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Arial';
+  src: local("Arial Italic"), local("Arial-ItalicMT"), url("../assets/fonts/Arial-ItalicMT.woff2") format("woff2"), url("../assets/fonts/Arial-ItalicMT.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Arial';
+  src: local("Arial"), local("ArialMT"), url("../assets/fonts/ArialMT.woff2") format("woff2"), url("../assets/fonts/ArialMT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+html {
+  font-size: 10px;
+  line-height: 10px;
+  color: #4C4C4C; }
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  font-style: normal;
+  font-weight: 400; }
+
+p {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+.wrapper {
+  padding-right: 1rem;
+  padding-left: 1rem; }
+
+.primary-button {
+  display: inline-block;
+  background: #F1CDB3;
+  align-items: center;
+  padding: 15px 45px;
+  border-radius: 100px;
+  font-family: 'Georgia', serif;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.06em;
+  color: #292929;
+  cursor: pointer; }
+
+.section-heading {
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #545454; }
+
+.header {
+  background: url("/src/assets/startscreen/start-screen-gradient-background.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .header__wrapper {
+    padding-top: 30px; }
+  .header__logo-and-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .header__logo-heading {
+    margin-bottom: 10px;
+    color: #F1CDB3;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 110%;
+    letter-spacing: 0.06em; }
+  .header__logo-subheading {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.1em;
+    color: #FFFFFF; }
+  .header__burger {
+    padding: 0 43px; }
+  .header__startscreen {
+    padding-top: 6rem; }
+  .header__startscreen-content {
+    margin-bottom: 105px; }
+  .header__startscreen-heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin-bottom: 4.2rem; }
+  .header__startscreen-subheading {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: #CDCDCD;
+    margin-bottom: 4.2rem; }
+  .header__button-wrapper {
+    text-align: center; }
+  .header__startscreen-img {
+    display: flex;
+    margin-left: auto;
+    width: 26rem; }
+
+.about {
+  background: #FFFFFF; }
+  .about__wrapper {
+    padding-top: 4.2rem;
+    padding-bottom: 4.2rem; }
+  .about__content {
+    padding-bottom: 4.2rem; }
+  .about__section-heading {
+    padding-bottom: 2.5rem; }
+  .about__paragraph {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    text-align: justify;
+    color: #4C4C4C; }
+    .about__paragraph:not(:last-child) {
+      padding-bottom: 2.2rem; }
+  .about__img {
+    width: 26rem;
+    margin: auto; }
