@@ -28,6 +28,11 @@
   &:active {
     background: $color-primary-light;
     border: 2px solid $color-primary-light;
+
+    &:disabled {
+      background: transparent;
+      border: 2px solid $color-dark-s;
+    }
   }
 }
 
@@ -38,3 +43,4 @@
   width: 52px;
   height: 52px;
 }
+

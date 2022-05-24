@@ -1,6 +1,6 @@
 const burger = document?.querySelector('[data-burger]');
 const nav = document?.querySelector('[data-nav]');
-const container = document?.querySelector('[data-nav]');
+// const container = document?.querySelector('[data-nav]');
 const navItems = nav?.querySelectorAll('a');
 const body = document.body;
 const header = document?.querySelector('.header');
