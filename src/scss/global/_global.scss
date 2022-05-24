@@ -9,8 +9,6 @@ body {
     font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
-
-    overflow-x: hidden;
 }
 
 h1,
@@ -35,6 +33,10 @@ a {
 
 img {
     max-width: 100%;
+}
+
+.page-body {
+    overflow-x: hidden;
 }
 
 .list-reset {
