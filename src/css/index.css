@@ -105,6 +105,9 @@ img {
   .button-secondary:hover, .button-secondary:active {
     background: #FDDCC4;
     border: 2px solid #FDDCC4; }
+    .button-secondary:hover:disabled, .button-secondary:active:disabled {
+      background: transparent;
+      border: 2px solid #CDCDCD; }
 
 .button-arrow {
   display: flex;
@@ -128,7 +131,6 @@ img {
   overflow: hidden;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
-  margin-bottom: 20px;
   height: 435px;
   background: #FAFAFA; }
   .slider-card__img {
@@ -270,22 +272,28 @@ img {
   background: #F6F6F6; }
   .pets__wrapper {
     padding-top: 4.2rem;
-    padding-bottom: 4.2rem; }
-  .pets__slider {
+    padding-bottom: 4.2rem;
+    text-align: center; }
+  .pets__slider-container {
+    overflow: hidden;
+    width: 270px;
+    margin: 0 auto; }
+  .pets__slider-track {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    width: 270px; }
+    transition: .3s; }
+  .pets__slider-item {
+    min-width: 270px;
+    margin-bottom: 20px; }
   .pets__section-heading {
     padding-bottom: 4.2rem; }
   .pets__slider-buttons {
     display: flex;
     justify-content: space-between;
     margin: auto;
+    margin-bottom: 42px;
     width: 184px; }
-  .pets__slider-cards {
-    margin-bottom: 40px; }
+  .pets__arrow-img:disabled {
+    fill: #CDCDCD; }
 
 .help {
   background: #FFFFFF; }

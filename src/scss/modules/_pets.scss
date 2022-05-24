@@ -4,15 +4,23 @@
   &__wrapper {
     padding-top: $mobile-wrapper-padding-top;
     padding-bottom: $mobile-wrapper-padding-bottom;
-    
+    text-align: center;
   }
 
-  &__slider {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
+  &__slider-container {
+    overflow: hidden;
     width: 270px;
+    margin: 0 auto;
+  }
+
+  &__slider-track {
+    display: flex;
+    transition: .3s;
+  }
+
+  &__slider-item {
+    min-width: 270px;
+    margin-bottom: 20px;
   }
 
   &__section-heading {
@@ -23,10 +31,13 @@
     display: flex;
     justify-content: space-between;
     margin: auto;
+    margin-bottom: 42px;
     width: 184px;
   }
 
-  &__slider-cards {
-    margin-bottom: 40px;
+  &__arrow-img {
+    &:disabled {
+      fill: $color-dark-s;
+    }
   }
 }
