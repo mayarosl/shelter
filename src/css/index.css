@@ -42,8 +42,7 @@ body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   font-style: normal;
-  font-weight: 400;
-  overflow-x: hidden; }
+  font-weight: 400; }
 
 h1,
 h2,
@@ -64,6 +63,9 @@ a {
 
 img {
   max-width: 100%; }
+
+.page-body {
+  overflow-x: hidden; }
 
 .list-reset {
   margin: 0;
@@ -202,7 +204,7 @@ img {
     width: 260px; }
 
 .mobile-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
