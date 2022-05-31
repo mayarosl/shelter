@@ -9,13 +9,14 @@ $slider-card-img-height: 270px;
   overflow: hidden;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
-  // margin-bottom: 20px;
+  margin-bottom: 20px;
   height: 435px;
   background: $color-light-s;
 
   &__img {
     width: $slider-card-img-width;
     height: $slider-card-img-height;
+    margin-bottom: 30px;
   }
 
   &__heading {
@@ -23,6 +24,7 @@ $slider-card-img-height: 270px;
     line-height: 2.3rem;
     letter-spacing: 0.06em;
     color: $color-dark-l;
+    margin-bottom: 30px;
   }
 
   &__button {

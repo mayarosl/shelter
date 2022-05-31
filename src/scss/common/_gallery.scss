@@ -1,0 +1,32 @@
+.gallery {
+  position: relative;
+  width: 270px;
+  overflow: hidden;
+  user-select: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-line-container {
+  overflow: hidden;
+}
+
+.gallery-draggable {
+  cursor: grabbing;
+}
+
+.gallery-line {
+  overflow: hidden;
+  touch-action: none;
+}
+
+.gallery-slide {
+  min-height: 1px;
+  float: left;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+
+.gallery-slide img {
+  pointer-events: none;
+}

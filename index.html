@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/index.css">
+    <script src="./src/scripts/gallery.js"></script>
     <title>Shelter for pets</title>
 </head>
 <body class="page-body">
@@ -73,83 +74,48 @@
     </section>
     <!-- ABOUT -->
 
-     <!-- PETS -->
-     <section class="pets" id="pets">
+    <!-- PETS -->
+    <section class="pets" id="pets">
         <div class="wrapper pets__wrapper">
             <h3 class="section-heading pets__section-heading">
                 Our friends who<br>are looking for a house
             </h3>
-            <div class="pets__slider-container">
-                <div class="pets__slider-track">
-                    <div class="pets__slider-item slider-card">
-                        <img src="./src/assets/pets/pets-katrine.png" alt="Katrine" class="slider-card__img">
-                        <h4 class="slider-card__heading">Katrine</h4>
-                        <button class="button-primary button-secondary slider-card__button">Learn more</button>
-                    </div>
-                    <div class="pets__slider-item slider-card">
-                        <img src="./src/assets/pets/pets-jennifer.png" alt="Jennifer" class="slider-card__img">
-                        <h4 class="slider-card__heading">Jennifer</h4>
-                        <button class="button-primary button-secondary slider-card__button">Learn more</button>
-                    </div>
-                    <div class="pets__slider-item slider-card">
-                        <img src="./src/assets/pets/pets-woody.png" alt="Woody" class="slider-card__img">
-                        <h4 class="slider-card__heading">Woody</h4>
-                        <button class="button-primary button-secondary slider-card__button">Learn more</button>
-                    </div>
+
+            <div class="pets__slider" id="slider">
+                <div class="slider-card">
+                    <img src="./src/assets/pets/pets-katrine.png" alt="Katrine" class="slider-card__img">
+                    <h4 class="slider-card__heading">Katrine</h4>
+                    <button class="button-primary button-secondary slider-card__button">Learn more</button>
                 </div>
-            </div>
+                <div class="slider-card">
+                    <img src="./src/assets/pets/pets-jennifer.png" alt="Jennifer" class="slider-card__img">
+                    <h4 class="slider-card__heading">Jennifer</h4>
+                    <button class="button-primary button-secondary slider-card__button">Learn more</button>
+                </div>
+                <div class="slider-card">
+                    <img src="./src/assets/pets/pets-woody.png" alt="Woody" class="slider-card__img">
+                    <h4 class="slider-card__heading">Woody</h4>
+                    <button class="button-primary button-secondary slider-card__button">Learn more</button>
+                </div>
+            </div> 
+
             <div class="pets__slider-buttons">
                 <button class="button-primary button-secondary button-arrow button-prev">
                     <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="pets__arrow-img" d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929"/>
+                        <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929"/>
                     </svg>
                 </button>
                 <button class="button-primary button-secondary button-arrow button-next">
-                    <svg class="pets__arrow-img rotate" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="pets__arrow-img" d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929"/>
+                    <svg class="rotate" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929"/>
                     </svg>
                 </button> 
             </div>
-            <button class="button-primary pets__button">Get to know the rest</button>
 
-            <!-- <div class="pets__slider">
-                <div class="slider-cards pets__slider-cards" data-slider>
-                    <div class="slider-card">
-                        <img src="./src/assets/pets/pets-katrine.png" alt="Katrine" class="slider-card__img">
-                        <h4 class="slider-card__heading">Katrine</h4>
-                        <button class="button-primary button-secondary slider-card__button">Learn more</button>
-                    </div>
-                    <div class="slider-card">
-                        <img src="./src/assets/pets/pets-jennifer.png" alt="Jennifer" class="slider-card__img">
-                        <h4 class="slider-card__heading">Jennifer</h4>
-                        <button class="button-primary button-secondary slider-card__button">Learn more</button>
-                    </div>
-                    <div class="slider-card">
-                        <img src="./src/assets/pets/pets-woody.png" alt="Woody" class="slider-card__img">
-                        <h4 class="slider-card__heading">Woody</h4>
-                        <button class="button-primary button-secondary slider-card__button">Learn more</button>
-                    </div>
-                    
-                </div>
-                
-                <div class="pets__slider-buttons">
-                    <button class="button-primary button-secondary button-arrow button-prev">
-                            <svg class="help-item__img" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929"/>
-                            </svg>
-                </button>
-                <button class="button-primary button-secondary button-arrow button-next">
-                            <svg class="rotate" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929"/>
-                            </svg>
-                </button> 
-                    </div>
-                
-                <button class="button-primary">Get to know the rest</button>
-            </div> -->
-        </div>
-    </section>
-    <!-- PETS -->
+            <button class="button-primary">Get to know the rest</button>
+        </div> 
+    </section>   
+    <!-- PETS -->   
 
     <!-- HELP -->
     <section class="help" id="help">
@@ -328,6 +294,6 @@
     </footer>
     <!-- FOOTER -->
     <script src="./src/scripts/burger.js"></script>
-    <script src="./src/scripts/slider.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>

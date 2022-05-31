@@ -7,22 +7,6 @@
     text-align: center;
   }
 
-  &__slider-container {
-    overflow: hidden;
-    width: 270px;
-    margin: 0 auto;
-  }
-
-  &__slider-track {
-    display: flex;
-    transition: .3s;
-  }
-
-  &__slider-item {
-    min-width: 270px;
-    margin-bottom: 20px;
-  }
-
   &__section-heading {
     padding-bottom: $mobile-padding-bottom;
   }
@@ -33,11 +17,5 @@
     margin: auto;
     margin-bottom: 42px;
     width: 184px;
-  }
-
-  &__arrow-img {
-    &:disabled {
-      fill: $color-dark-s;
-    }
   }
 }
