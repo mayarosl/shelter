@@ -1,0 +1,21 @@
+.pets {
+  background: $color-light-l;
+  
+  &__wrapper {
+    padding-top: $mobile-wrapper-padding-top;
+    padding-bottom: $mobile-wrapper-padding-bottom;
+    text-align: center;
+  }
+
+  &__section-heading {
+    padding-bottom: $mobile-padding-bottom;
+  }
+
+  &__slider-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 42px;
+    width: 184px;
+  }
+}

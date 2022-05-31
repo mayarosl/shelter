@@ -3,8 +3,15 @@
 @import './constants/constants';
 @import './global/global';
 
-@import './common/primary-button';
+@import './common/buttons';
 @import './common/section-heading';
+@import './common/slider-card';
+@import './common/gallery';
 
 @import './modules/header';
-@import './modules/about'
+@import './modules/mobile-nav';
+@import './modules/about';
+@import './modules/pets';
+@import './modules/help';
+@import './modules/donation';
+@import './modules/footer';

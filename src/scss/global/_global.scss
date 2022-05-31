@@ -35,7 +35,25 @@ img {
     max-width: 100%;
 }
 
+.page-body {
+    overflow-x: hidden;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
 .wrapper {
     padding-right:1rem;
     padding-left: 1rem;
 }
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.stop-scroll {
+    overflow: hidden;
+  }
