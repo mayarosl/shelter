@@ -19,3 +19,14 @@
     width: 184px;
   }
 }
+
+.pets-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pets-slider-card {
+  margin-bottom: 30px;
+  max-width: 270px;
+}

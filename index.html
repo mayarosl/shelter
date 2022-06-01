@@ -19,7 +19,12 @@
                 </a>
                 <div class="header__burger-container">
                     <div class="header__burger" data-burger>
-                        <img src="./src/assets/header/burger.png" alt="burger" class="header__burger-img">
+                        <svg class="header__burger-img" width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="21" x2="30" y2="21" stroke="#F1CDB3" stroke-width="2"/>
+                            <line y1="11" x2="30" y2="11" stroke="#F1CDB3" stroke-width="2"/>
+                            <line y1="1" x2="30" y2="1" stroke="#F1CDB3" stroke-width="2"/>
+                        </svg>
+                        <!-- <img src="./src/assets/header/burger.png" alt="burger" class="header__burger-img"> -->
                     </div>
                 </div>
             </div>
@@ -44,7 +49,7 @@
         <nav class="mobile-nav" data-nav>
             <ul class="mobile-nav__list list-reset">
             <li class="mobile-nav__item"><a href="#about" class="mobile-nav__link mobile-nav__link-active">About the shelter</a></li>
-            <li class="mobile-nav__item"><a href="#pets" class="mobile-nav__link">Our pets</a></li>
+            <li class="mobile-nav__item"><a href="./ourpets.html" class="mobile-nav__link">Our pets</a></li>
             <li class="mobile-nav__item"><a href="#help" class="mobile-nav__link">Help the shelter</a></li>
             <li class="mobile-nav__item"><a href="#contacts" class="mobile-nav__link">Contacts</a></li>
             </ul>
@@ -112,7 +117,7 @@
                 </button> 
             </div>
 
-            <button class="button-primary">Get to know the rest</button>
+            <button onclick="location.href = './ourpets.html';" class="button-primary">Get to know the rest</button>
         </div> 
     </section>   
     <!-- PETS -->   
