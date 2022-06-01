@@ -1,6 +1,7 @@
 $mobile-heading-font-size: 2.5rem;
 $mobile-heading-line-height: 3.2rem;
 $mobile-margin-bottom: 4.2rem;
+$pets-burger-line-stroke-color: #000;
 
 .header {
   background: url('/src/assets/footer/noise_transparent.png'), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
@@ -47,11 +48,12 @@ $mobile-margin-bottom: 4.2rem;
     z-index: 100;
   }
 
-  &__burger {
-  }
-
   &__burger--active {
     transform: rotate(90deg);
+    .pets-burger-icon line {
+      stroke: $color-primary;
+    }
+
   }
 
   &__startscreen {
@@ -93,3 +95,37 @@ $mobile-margin-bottom: 4.2rem;
     width: $mobile-img-width;
   }
 }
+
+.pets-header {
+  background: $color-light-xl;
+}
+
+.pets-header-wrapper {
+  padding-bottom: 30px;
+}
+
+.pets-logo-heading {
+  color: $color-dark-l;
+
+  &--active {
+    color: $color-primary;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.pets-logo-subheading {
+  color: $color-dark-3xl;
+
+  &--active {
+    color: $color-light-xl;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.pets-burger-icon line{
+  stroke: $pets-burger-line-stroke-color;
+}
+
+.header__logo--active .pets-logo-heading {
+    color: $color-primary;
+  }

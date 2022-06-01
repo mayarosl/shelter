@@ -205,7 +205,7 @@ class Gallery {
   }
 
   resetStyleTransition() {
-    this.lineNode.style.transition = `all 0s ease 0s`;
+    this.lineNode.style.transition = `all 0.5s ease 0s`;
   }
 }
 
