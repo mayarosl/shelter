@@ -1,0 +1,137 @@
+$modal-mobile-width: 240px;
+$modal-mobile-height: 341px;
+$modal-middle-width: 630px;
+$modal-full-width: 900px;
+$modal-img-middle-width: 350px;
+$modal-img-middle-height: 350px;
+$modal-img-full-width: 500px;
+$modal-img-full-height: 500px;
+$modal-color: #000;
+
+.modals {
+  &--visible {
+    display: block;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(41, 41, 41, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+
+  &--visible {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.modal {
+  display: none;
+  
+  &--visible {
+    display: block;
+  }
+
+  &__card {
+    background-color: $color-light-s;
+    width: $modal-mobile-width;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    letter-spacing: 0.06em;
+    color: $modal-color;
+
+    @include _768 {
+      width: $modal-middle-width;
+    }
+
+    @include _1280 {
+      width: $modal-full-width;
+    }
+  }
+
+  &__img {
+    display: none;
+
+    @include _768 {
+      display: block;
+      width: $modal-img-middle-width;
+      height: $modal-img-middle-height;
+    }
+
+    @include _1280 {
+      width: $modal-img-full-width;
+      height: $modal-img-full-height;
+    }
+    
+  }
+
+  &__content {
+    @include _768 {
+      text-align: left;
+    }
+
+    @include _1280 {
+      margin-right: 30px;
+    }
+  }
+
+  &__heading {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    margin-bottom: 10px;
+  }
+
+  &__subheading {
+    font-size: 2rem;
+    line-height: 2.3rem;
+    margin-bottom: 20px;
+  }
+
+  &__paragraph {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    text-align: justify;
+    margin-bottom: 24px;
+  }
+
+  &__list {
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  &__item {
+    margin-bottom: 6px;
+    position: relative;
+
+    &::before {
+      content: "\2022";
+      color: $color-primary;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+      position: absolute;
+      top: 25%;
+    }
+  }
+
+  &__details {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+}
+

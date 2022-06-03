@@ -40,7 +40,7 @@
                     <h2 class="header__startscreen-heading">Not only people<br>need a house</h2>
                     <p class="header__startscreen-subheading">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
                     <div class="header__button-wrapper">
-                        <button class="header__startscreen-button button-primary">Make a friend</button>
+                        <button onclick="location.href = './index.html#pets';" class="header__startscreen-button button-primary">Make a friend</button>
                     </div>
                 </div>
                 <div class="header__startscreen-img">
@@ -90,42 +90,130 @@
             <h3 class="section-heading pets__section-heading">
                 Our friends who<br>are looking for a house
             </h3>
-
+            <!-- SLIDER -->
             <div class="pets__slider" id="slider">
-                <div class="slider-card">
+                <div class="slider-card" data-path="Katrine">
                     <img src="./src/assets/pets/pets-katrine.png" alt="Katrine" class="slider-card__img">
                     <h4 class="slider-card__heading">Katrine</h4>
-                    <button class="button-primary button-secondary slider-card__button">Learn more</button>
+                    <button class="button-primary button-secondary slider-card__button" data-path="Katrine">Learn more</button>
                 </div>
-                <div class="slider-card">
+                <div class="slider-card" data-path="Jennifer">
                     <img src="./src/assets/pets/pets-jennifer.png" alt="Jennifer" class="slider-card__img">
                     <h4 class="slider-card__heading">Jennifer</h4>
-                    <button class="button-primary button-secondary slider-card__button">Learn more</button>
+                    <button class="button-primary button-secondary slider-card__button" data-path="Jennifer">Learn more</button>
                 </div>
-                <div class="slider-card">
+                <div class="slider-card" data-path="Woody">
                     <img src="./src/assets/pets/pets-woody.png" alt="Woody" class="slider-card__img">
                     <h4 class="slider-card__heading">Woody</h4>
-                    <button class="button-primary button-secondary slider-card__button">Learn more</button>
+                    <button class="button-primary button-secondary slider-card__button" data-path="Woody">Learn more</button>
                 </div>
             </div> 
+            <!-- SLIDER -->
 
+            <!-- SLIDER-FULL -->
             <div class=" pets__slider-full">
-                <div class="slider-card pets__slider-card">
+                <div class="slider-card pets__slider-card" data-path="Katrine">
                     <img src="./src/assets/pets/pets-katrine.png" alt="Katrine" class="slider-card__img">
                     <h4 class="slider-card__heading">Katrine</h4>
-                    <button class="button-primary button-secondary slider-card__button">Learn more</button>
+                    <button class="button-primary button-secondary slider-card__button" data-path="Katrine">Learn more</button>
                 </div>
-                <div class="slider-card pets__slider-card">
+                <div class="slider-card pets__slider-card" data-path="Jennifer">
                     <img src="./src/assets/pets/pets-jennifer.png" alt="Jennifer" class="slider-card__img">
                     <h4 class="slider-card__heading">Jennifer</h4>
-                    <button class="button-primary button-secondary slider-card__button">Learn more</button>
+                    <button class="button-primary button-secondary slider-card__button" data-path="Jennifer">Learn more</button>
                 </div>
-                <div class="slider-card pets__slider-card">
+                <div class="slider-card pets__slider-card" data-path="Woody">
                     <img src="./src/assets/pets/pets-woody.png" alt="Woody" class="slider-card__img">
                     <h4 class="slider-card__heading">Woody</h4>
-                    <button class="button-primary button-secondary slider-card__button">Learn more</button>
+                    <button class="button-primary button-secondary slider-card__button" data-path="Woody">Learn more</button>
                 </div>
             </div> 
+            <!-- SLIDER-FULL -->
+
+            <!-- MODALS -->
+            <div class="pets__modals modals">
+                <div class="pets__modal-overlay modal-overlay">
+                    <div class="modal pets__modal" data-target="Katrine">
+                        <div class="modal__card">
+                            <img class="modal__img" src="./src/assets/pets/pets-katrine.png" alt="Katrine">
+                            <div class="modal__content">
+                                <h3 class="modal__heading">Katrine</h3>
+                                <h4 class="modal__subheading">Cat - British Shorthair</h4>
+                                <p class="modal__paragraph">
+                                    Katrine is a beautiful girl. She is as soft as the finest velvet with a thick lush fur. Will love you until the last breath she takes as long as you are the one. She is picky about her affection. She loves cuddles and to stretch into your hands for a deeper relaxations.
+                                </p>
+                                <ul class="list-reset modal__list">
+                                    <li class="modal__item">
+                                        <h5 class="modal__details"><b>Age: </b>2 months</h5>
+                                    </li>
+                                    <li class="modal__item">
+                                        <h5 class="modal__details"><b>Inoculations: </b>none</h5>
+                                    </li>
+                                    <li class="modal__item">
+                                        <h5 class="modal__details"><b>Diseases: </b>none</h5>
+                                    </li>
+                                    <li class="modal__item">
+                                        <h5 class="modal__details"><b>Parasites: </b>none</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal pets__modal" data-target="Jennifer">
+                        <div class="modal__card">
+                            <img class="modal__img" src="./src/assets/pets/pets-jennifer.png" alt="Jennifer">
+                            <div class="modal__content">
+                                <h3 class="modal__heading">Jennifer</h3>
+                                <h4 class="modal__subheading">Dog - Labrador</h4>
+                                <p class="modal__paragraph">
+                                    Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.
+                                </p>
+                                <ul class="list-reset modal__list">
+                                    <li class="modal__item">
+                                        <h5 class="modal__details"><b>Age: </b>2 months</h5>
+                                    </li>
+                                    <li class="modal__item">
+                                        <h5 class="modal__details"><b>Inoculations: </b>none</h5>
+                                    </li>
+                                    <li class="modal__item">
+                                        <h5 class="modal__details"><b>Diseases: </b>none</h5>
+                                    </li>
+                                    <li class="modal__item">
+                                        <h5 class="modal__details"><b>Parasites: </b>none</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal pets__modal" data-target="Woody">
+                        <div class="modal__card">
+                            <img class="modal__img" src="./src/assets/pets/pets-woody.png" alt="Woody">
+                            <div class="modal__content">
+                                <h3 class="modal__heading">Woody</h3>
+                                <h4 class="modal__subheading">Dog - Golden Retriever</h4>
+                                <p class="modal__paragraph">
+                                    Woody is a handsome 3 1/2 year old boy. Woody does know basic commands and is a smart pup. Since he is on the stronger side, he will learn a lot from your training. Woody will be happier when he finds a new family that can spend a lot of time with him.
+                                </p>
+                                <ul class="list-reset modal__list">
+                                    <li class="modal__item">
+                                        <h5 class="modal__details"><b>Age: </b>3 1/2 year</h5>
+                                    </li>
+                                    <li class="modal__item">
+                                        <h5 class="modal__details"><b>Inoculations: </b>none</h5>
+                                    </li>
+                                    <li class="modal__item">
+                                        <h5 class="modal__details"><b>Diseases: </b>none</h5>
+                                    </li>
+                                    <li class="modal__item">
+                                        <h5 class="modal__details"><b>Parasites: </b>none</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <!-- MODALS -->
 
             <div class="pets__slider-buttons">
                 <button class="button-primary button-secondary button-arrow button-prev">
@@ -319,5 +407,6 @@
     <!-- FOOTER -->
     <script src="./src/scripts/burger.js"></script>
     <script src="./index.js"></script>
+    <script src="./src/scripts/modal.js"></script>
 </body>
 </html>
