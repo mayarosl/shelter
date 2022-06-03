@@ -7,10 +7,26 @@ $help-icon-mobile-height: 50px;
   &__wrapper {
     padding-top: $mobile-wrapper-padding-top;
     padding-bottom: $mobile-wrapper-padding-bottom;
+
+    @include _768 {
+      margin: 0 auto;
+      padding-top: 80px;
+      padding-bottom: 100px;
+      max-width: 768px;
+    }
+
+    @include _1280 {
+      max-width: 1280px;
+    }
   }
 
   &__section-heading {
     margin-bottom: $mobile-padding-bottom;
+
+    @include _768 {
+      text-align: center;
+      margin-bottom: 60px;
+    }
   }
 
   &__items {
@@ -18,6 +34,17 @@ $help-icon-mobile-height: 50px;
     flex-wrap: wrap;
     max-width: 300px;
     margin: auto;
+
+    @include _768{
+      max-width: 630px;
+      justify-content: space-between;
+      row-gap: 60px;
+    }
+
+    @include _1280{
+      max-width: 1170px;
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -28,8 +55,24 @@ $help-icon-mobile-height: 50px;
     width: 50%;
     max-width: 50%;
 
+    @include _768{
+      width: 30%;
+      max-width: 30%;
+      height: 110px;
+      justify-content: space-between;
+    }
+
+    @include _1280{
+      width: 20%;
+      max-width: 20%;
+    }
+
     &:not(:last-child) {
       padding-bottom: 30px;
+
+      @include _768 {
+        padding-bottom: 0;
+      }
     }
   }
 
@@ -37,6 +80,11 @@ $help-icon-mobile-height: 50px;
     width: $help-icon-mobile-width;
     height: $help-icon-mobile-height;
     padding-bottom: 20px;
+
+    @include _768 {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   &__item-heading {
@@ -45,5 +93,10 @@ $help-icon-mobile-height: 50px;
     text-align: center;
     letter-spacing: 0.06em;    
     color: $color-dark-l;
+
+    @include _768 {
+      font-size: 2rem;
+      line-height: 2.3rem;
+    }
   }
 }

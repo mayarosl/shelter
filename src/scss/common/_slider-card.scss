@@ -1,5 +1,7 @@
 $slider-card-img-width: 270px;
 $slider-card-img-height: 270px;
+$slider-card-width: 270px;
+$slider-card-height: 435px;
 
 .slider-card {
   display: flex;
@@ -7,11 +9,18 @@ $slider-card-img-height: 270px;
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
+  margin: auto;
+  // margin-bottom: 20px;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
-  margin-bottom: 20px;
-  height: 435px;
+  height: $slider-card-height;
+  width: $slider-card-width;
   background: $color-light-s;
+
+
+  @include _768 {
+    // margin-bottom: 0;
+  }
 
   &__img {
     width: $slider-card-img-width;
