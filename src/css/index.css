@@ -326,10 +326,21 @@ img {
         display: flex; } }
   .header__full-nav-item:not(:last-child) {
     margin-right: 3.5rem; }
-  .header__full-hav-link {
+  .header__full-nav-link {
+    position: relative;
     font-size: 1.5rem;
     line-height: 2.4rem;
     color: #CDCDCD; }
+    .header__full-nav-link--active, .header__full-nav-link:hover, .header__full-nav-link:active {
+      color: #FAFAFA; }
+      .header__full-nav-link--active::before, .header__full-nav-link:hover::before, .header__full-nav-link:active::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 3px;
+        background-color: #F1CDB3; }
   .header__burger-container {
     padding: 0 43px;
     z-index: 100; }
@@ -457,9 +468,9 @@ img {
     font-size: 32px;
     line-height: 5.1rem;
     color: #CDCDCD; }
-    .mobile-nav__link:hover, .mobile-nav__link:active {
+    .mobile-nav__link--active, .mobile-nav__link:hover, .mobile-nav__link:active {
       color: #FAFAFA; }
-      .mobile-nav__link:hover::before, .mobile-nav__link:active::before {
+      .mobile-nav__link--active::before, .mobile-nav__link:hover::before, .mobile-nav__link:active::before {
         content: '';
         position: absolute;
         left: 0;

@@ -8,7 +8,7 @@
     <script src="./src/scripts/gallery.js"></script>
     <title>Our Pets</title>
   </head>
-  <body class="page-body">
+  <body class="page-body" data-id-page="ourpets">
     <!-- HEADER -->
     <header class="header pets-header">
       <div class="wrapper header__wrapper pets-header-wrapper">
@@ -25,26 +25,32 @@
             <li class="header__full-nav-item">
               <a
                 href="./index.html#about"
-                class="header__full-hav-link pets-full-nav-link"
+                class="header__full-nav-link pets-full-nav-link"
+                data-id-nav="index"
                 >About the shelter</a
               >
             </li>
             <li class="header__full-nav-item">
-              <a href="#" class="header__full-hav-link pets-full-nav-link"
+              <a
+                href="#" 
+                class="header__full-nav-link pets-full-nav-link"
+                data-id-nav="ourpets"
                 >Our pets</a
               >
             </li>
             <li class="header__full-nav-item">
               <a
                 href="./index.html#help"
-                class="header__full-hav-link pets-full-nav-link"
+                class="header__full-nav-link pets-full-nav-link"
+                data-id-nav="index"
                 >Help the shelter</a
               >
             </li>
             <li class="header__full-nav-item">
               <a
                 href="#contacts"
-                class="header__full-hav-link pets-full-nav-link"
+                class="header__full-nav-link pets-full-nav-link"
+                data-id-nav="ourpets"
                 >Contacts</a
               >
             </li>
@@ -85,20 +91,21 @@
           <li class="mobile-nav__item">
             <a
               href="./index.html#about"
-              class="mobile-nav__link mobile-nav__link-active"
+              class="mobile-nav__link"
+              data-id-mobile-nav="index"
               >About the shelter</a
             >
           </li>
           <li class="mobile-nav__item">
-            <a href="#" class="mobile-nav__link">Our pets</a>
+            <a href="#" class="mobile-nav__link" data-id-mobile-nav="ourpets">Our pets</a>
           </li>
           <li class="mobile-nav__item">
-            <a href="./index.html#help" class="mobile-nav__link"
+            <a href="./index.html#help" class="mobile-nav__link" data-id-mobile-nav="index"
               >Help the shelter</a
             >
           </li>
           <li class="mobile-nav__item">
-            <a href="#contacts" class="mobile-nav__link">Contacts</a>
+            <a href="#contacts" class="mobile-nav__link" data-id-mobile-nav="ourpets">Contacts</a>
           </li>
         </ul>
       </nav>
@@ -460,6 +467,7 @@
     </footer>
     <!-- FOOTER -->
     <script src="./src/scripts/burger.js"></script>
+    <script src="./src/scripts/activemenu.js"></script>
     <script src="./index.js"></script>
     <script src="./src/scripts/modal.js"></script>
   </body>

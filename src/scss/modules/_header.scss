@@ -66,10 +66,27 @@ $pets-burger-line-stroke-color: #000;
     }
   }
 
-  &__full-hav-link {
+  &__full-nav-link {
+    position: relative;
     font-size: 1.5rem;
     line-height: 2.4rem;
     color: $color-dark-s;
+    
+    &--active,
+    &:hover,
+    &:active {
+      color: $color-light-s;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 3px;
+        background-color: $color-primary;
+      }
+    }
   }
 
   &__burger-container {

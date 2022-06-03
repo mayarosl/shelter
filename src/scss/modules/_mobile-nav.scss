@@ -38,6 +38,7 @@
     line-height: 5.1rem;
     color: $color-dark-s;
 
+    &--active,
     &:hover,
     &:active {
       color: $color-light-s;
