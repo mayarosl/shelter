@@ -5,6 +5,7 @@
   user-select: none;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .gallery-line-container {
@@ -26,6 +27,10 @@
   float: left;
   overflow: hidden;
   transform: translateZ(0);
+
+  @include _1280 {
+    width: 270px;
+  }
 }
 
 .gallery-slide img {

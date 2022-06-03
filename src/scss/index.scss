@@ -1,7 +1,9 @@
 @import './fonts';
 
 @import './constants/constants';
+@import './global/media-mixin';
 @import './global/global';
+
 
 @import './common/buttons';
 @import './common/section-heading';

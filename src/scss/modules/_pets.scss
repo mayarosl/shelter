@@ -5,10 +5,25 @@
     padding-top: $mobile-wrapper-padding-top;
     padding-bottom: $mobile-wrapper-padding-bottom;
     text-align: center;
+
+    @include _768 {
+      padding-top: 80px;
+      padding-bottom: 100px;
+      margin: 0 auto;
+    }
+
+    @include _1280 {
+      max-width: 1280px;
+    }
   }
 
   &__section-heading {
     padding-bottom: $mobile-padding-bottom;
+
+    @include _768 {
+      text-align: center;
+      padding-bottom: 60px;
+    }
   }
 
   &__slider-buttons {
@@ -17,16 +32,80 @@
     margin: auto;
     margin-bottom: 42px;
     width: 184px;
+
+    @include _768 {
+    display: none;
+    }
+  }
+
+  &__slider {
+    margin-bottom: 20px;
+    
+    @include _768 {
+      display: none;
+    }
+  }
+
+  &__slider-card {
+    margin-bottom: 20px;
+
+    &:last-child {
+    
+      @include _768 {
+        display: none;
+      }
+      
+      @include _1280 {
+      display: block;
+      }
+    }
+  }
+
+  &__slider-full {
+    display: none;
+
+    @include _768 {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 580px;
+      margin-bottom: 60px;
+    }
+
+    @include _1280 {
+    width: 980px;
+    }
   }
 }
 
-.pets-slider {
+// OURPETS
+.pets-gallery {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: auto;
+
+  @include _768 {
+    max-width: 580px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include _1280 {
+    max-width: 1200px;
+  }
 }
 
-.pets-slider-card {
+.pets-gallery-card {
   margin-bottom: 30px;
-  max-width: 270px;
+
+  &:not(:nth-child(-n+3)) {
+    display: none;
+  }
+
+  @include _768 {
+    &:not(:nth-child(-n+3)) {
+      display: block;
+    }
+  }
 }
+

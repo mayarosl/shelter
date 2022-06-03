@@ -46,8 +46,18 @@ img {
   }
 
 .wrapper {
-    padding-right:1rem;
-    padding-left: 1rem;
+    padding-right:10px;
+    padding-left: 10px;
+
+    @include _768 {
+        padding-right:30px;
+        padding-left: 30px;
+    }
+
+    @include _1280 {
+        padding-right:40px;
+        padding-left: 40px;
+      }
 }
 
 .rotate {
