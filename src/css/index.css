@@ -253,13 +253,21 @@ img {
     .modal__content {
       margin-right: 30px; } }
   .modal__heading {
+    text-align: center;
     font-size: 3.5rem;
     line-height: 4.5rem;
     margin-bottom: 10px; }
+    @media (min-width: 768px) {
+      .modal__heading {
+        text-align: start; } }
   .modal__subheading {
+    text-align: center;
     font-size: 2rem;
     line-height: 2.3rem;
     margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      .modal__subheading {
+        text-align: start; } }
   .modal__paragraph {
     font-size: 1.3rem;
     line-height: 1.4rem;
