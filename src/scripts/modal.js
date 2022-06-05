@@ -24,6 +24,7 @@ crds.forEach((el) => {
 			el.classList.remove('modal--visible');
 		});
 
+		body.classList.toggle('stop-scroll');
 		document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
 		modalOverlay.classList.add('modal-overlay--visible');
 	});
@@ -32,6 +33,7 @@ crds.forEach((el) => {
 modalOverlay.addEventListener('click', (e) => {
 
 	if (e.target == modalOverlay) {
+		body.classList.remove('stop-scroll');
 		modalOverlay.classList.remove('modal-overlay--visible');
 		modals.forEach((el) => {
 			el.classList.remove('modal--visible');
